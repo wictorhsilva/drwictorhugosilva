@@ -61,7 +61,8 @@
         Phone,
         Mail,
         Instagram,
-        ArrowRight
+        ArrowRight,
+        BookOpen
       } from 'lucide-react';
 
       // --- Components ---
@@ -137,7 +138,23 @@
       function App() {
         const [isScrolled, setIsScrolled] = useState(false);
         const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-        
+        const [blogPosts, setBlogPosts] = useState([
+          {
+            date: "15 Mai 2025",
+            title: "O que é Medicina Integrativa?",
+            excerpt: "Entenda por que olhar para o paciente como um todo é a chave para a longevidade."
+          },
+          {
+            date: "10 Mai 2025",
+            title: "5 dicas para controlar a pressão arterial",
+            excerpt: "Pequenas mudanças no estilo de vida que fazem uma grande diferença no seu dia a dia."
+          },
+          {
+            date: "05 Mai 2025",
+            title: "Telemedicina: segurança e eficácia",
+            excerpt: "Como as consultas online estão revolucionando o acesso à saúde de qualidade."
+          }
+        ]);
 
         useEffect(() => {
           const handleScroll = () => {
@@ -559,4 +576,3 @@
   </body>
 
 </html>
-
