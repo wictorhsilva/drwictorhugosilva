@@ -623,6 +623,9 @@
 
         const mensagem = `Olá, gostaria de agendar uma consulta. Meu nome é ${nome}, sexo ${sexo}, tenho ${idade} anos, estou entrando em contato por: ${motivo}`;
         const url = `https://wa.me/5579981069916?text=${encodeURIComponent(mensagem)}`;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'click_wpp' });
+
         window.open(url, '_blank');
         fecharModal();
       }
