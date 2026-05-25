@@ -93,7 +93,7 @@
           <a href="#sobre" class="text-sm uppercase tracking-wider font-medium hover:text-primary transition-colors text-gray-800">Sobre</a>
           <a href="#especialidades" class="text-sm uppercase tracking-wider font-medium hover:text-primary transition-colors text-gray-800">Especialidades</a>
           <a href="#telemedicina" class="text-sm uppercase tracking-wider font-medium hover:text-primary transition-colors text-gray-800">Telemedicina</a>
-          <a href="#depoimentos" class="text-sm uppercase tracking-wider font-medium hover:text-primary transition-colors text-gray-800">Depoimentos</a>
+          <a href="#pacotes" class="text-sm uppercase tracking-wider font-medium hover:text-primary transition-colors text-gray-800">Pacotes</a>
           
           <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" class="px-6 py-2 rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-md hover:shadow-lg text-xs tracking-wide uppercase bg-secondary text-white hover:bg-[#b09055] border border-transparent">
             Agendar Consulta
@@ -110,7 +110,7 @@
         <a href="#sobre" class="text-left py-2 text-lg font-serif border-b border-gray-50 mobile-link">Sobre</a>
         <a href="#especialidades" class="text-left py-2 text-lg font-serif border-b border-gray-50 mobile-link">Especialidades</a>
         <a href="#telemedicina" class="text-left py-2 text-lg font-serif border-b border-gray-50 mobile-link">Telemedicina</a>
-        <a href="#depoimentos" class="text-left py-2 text-lg font-serif border-b border-gray-50 mobile-link">Depoimentos</a>
+        <a href="#pacotes" class="text-left py-2 text-lg font-serif border-b border-gray-50 mobile-link">Pacotes</a>
         <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" class="w-full px-8 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 transform shadow-md text-sm tracking-wide uppercase bg-primary text-white hover:bg-opacity-90">
           Agendar Agora
         </button>
@@ -150,11 +150,11 @@
 
           <div class="pt-8 flex items-center gap-8 text-sm font-medium text-gray-500">
             <div class="flex items-center gap-2">
-              <i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i>
+              <i data-lucide="circle-check" class="text-secondary w-5 h-5"></i>
               <span>Atendimento Humanizado</span>
             </div>
             <div class="flex items-center gap-2">
-              <i data-lucide="check-circle-2" class="text-secondary w-5 h-5"></i>
+              <i data-lucide="circle-check" class="text-secondary w-5 h-5"></i>
               <span>Praticidade Total</span>
             </div>
           </div>
@@ -284,7 +284,7 @@
           <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-secondary relative overflow-hidden">
             <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-150"></div>
             <div class="text-primary mb-6 transform group-hover:scale-110 transition-transform duration-300">
-              <i data-lucide="check-circle-2" class="w-10 h-10"></i>
+              <i data-lucide="circle-check" class="w-10 h-10"></i>
             </div>
             <h3 class="text-2xl font-serif text-gray-800 mb-3">Dislipidemia</h3>
             <p class="text-gray-600 leading-relaxed text-sm">
@@ -368,7 +368,7 @@
 
               <div class="flex gap-4">
                 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-secondary border border-white/5">
-                  <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                  <i data-lucide="circle-check" class="w-5 h-5"></i>
                 </div>
                 <div>
                   <h4 class="text-xl font-serif text-white mb-1">Receita Digital</h4>
@@ -406,42 +406,99 @@
       </div>
     </section>
 
-    <section id="depoimentos" class="py-24 bg-white">
+    <section id="pacotes" class="py-24 bg-white">
       <div class="container mx-auto px-6">
         <div class="mb-12 text-center">
-            <span class="block text-secondary font-bold tracking-widest uppercase text-xs mb-3">Depoimentos</span>
-            <h2 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">O que dizem os pacientes</h2>
-            <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mt-6 mx-auto"></div>
+          <span class="block text-secondary font-bold tracking-widest uppercase text-xs mb-3">Transparência e Clareza</span>
+          <h2 class="text-4xl md:text-5xl font-serif text-gray-900 leading-tight">Conheça os Pacotes</h2>
+          <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mt-6 mx-auto"></div>
+          <p class="text-gray-500 mt-6 max-w-xl mx-auto text-base">Escolha o pacote que melhor se adapta à sua necessidade. Atendimento humanizado e com hora marcada, sem surpresas.</p>
         </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 transition-colors">
-            <div class="text-secondary text-4xl font-serif mb-4">"</div>
-            <p class="text-gray-600 mb-6 italic">Excelente atendimento. O Dr. Wictor foi muito atencioso, explicou tudo com calma e me senti muito segura com o tratamento proposto.</p>
-            <div>
-              <p class="font-bold text-gray-900">Maria S.</p>
-              <p class="text-xs text-primary uppercase tracking-wide">Paciente Hipertensão</p>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
+
+          <!-- Pacote 1: Consulta Avulsa -->
+          <div class="relative bg-white border-2 border-gray-100 hover:border-primary/40 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col">
+            <div class="mb-6">
+              <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-primary/10 mb-4">
+                <i data-lucide="stethoscope" class="w-7 h-7 text-primary"></i>
+              </div>
+              <h3 class="text-2xl font-serif text-gray-900 mb-1">Consulta Avulsa</h3>
+              <p class="text-sm text-gray-500 uppercase tracking-wider font-medium">Atendimento único</p>
             </div>
+
+            <div class="flex items-end gap-1 mb-8">
+              <span class="text-gray-400 text-lg font-medium">R$</span>
+              <span class="text-5xl font-serif font-bold text-gray-900">150</span>
+            </div>
+
+            <ul class="space-y-4 flex-1 mb-10">
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-600 text-sm leading-relaxed">Consulta de <strong class="text-gray-900">20 a 30 minutos</strong> via telemedicina</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-600 text-sm leading-relaxed">Anamnese completa e escuta ativa</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"></i>
+                <span class="text-gray-600 text-sm leading-relaxed"><strong class="text-gray-900">Emissão de receitas</strong>, atestados e pedidos de exame (quando necessário)</span>
+              </li>
+            </ul>
+
+            <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" class="w-full px-8 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-md hover:shadow-lg text-sm tracking-wide uppercase border-2 border-primary text-primary hover:bg-primary hover:text-white">
+              Agendar Consulta
+            </button>
           </div>
 
-          <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 transition-colors">
-            <div class="text-secondary text-4xl font-serif mb-4">"</div>
-            <p class="text-gray-600 mb-6 italic">A facilidade da telemedicina com um médico que realmente se importa. Resolvi meu problema de tireoide com acompanhamento constante.</p>
-            <div>
-              <p class="font-bold text-gray-900">Carlos A.</p>
-              <p class="text-xs text-primary uppercase tracking-wide">Paciente Hipotireoidismo</p>
+          <!-- Pacote 2: Consulta + Retorno -->
+          <div class="relative bg-primary rounded-3xl p-10 shadow-2xl flex flex-col overflow-hidden">
+            <div class="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-10 -mb-10"></div>
+
+            <div class="absolute top-6 right-6">
+              <span class="bg-secondary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Mais Completo</span>
             </div>
+
+            <div class="mb-6 relative z-10">
+              <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/15 mb-4">
+                <i data-lucide="refresh-cw" class="w-7 h-7 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-serif text-white mb-1">Consulta + Retorno</h3>
+              <p class="text-sm text-white/60 uppercase tracking-wider font-medium">Continuidade no cuidado</p>
+            </div>
+
+            <div class="flex items-end gap-1 mb-8 relative z-10">
+              <span class="text-white/60 text-lg font-medium">R$</span>
+              <span class="text-5xl font-serif font-bold text-white">200</span>
+            </div>
+
+            <ul class="space-y-4 flex-1 mb-10 relative z-10">
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5"></i>
+                <span class="text-white/85 text-sm leading-relaxed">Tudo incluído na <strong class="text-white">Consulta Avulsa</strong></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5"></i>
+                <span class="text-white/85 text-sm leading-relaxed"><strong class="text-white">Retorno em até 30 dias</strong> para análise de resultados de exames</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="circle-check" class="w-5 h-5 text-secondary flex-shrink-0 mt-0.5"></i>
+                <span class="text-white/85 text-sm leading-relaxed">Continuidade dos assuntos tratados na consulta inicial, sem recomeçar do zero</span>
+              </li>
+            </ul>
+
+            <button onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})" class="w-full px-8 py-3 rounded-full font-medium transition-all duration-300 flex items-center justify-center gap-2 transform hover:-translate-y-1 shadow-md hover:shadow-lg text-sm tracking-wide uppercase bg-white text-primary hover:bg-gray-100 relative z-10">
+              Agendar com Retorno
+            </button>
           </div>
 
-          <div class="bg-light p-8 rounded-2xl border border-gray-100 hover:border-primary/30 transition-colors">
-            <div class="text-secondary text-4xl font-serif mb-4">"</div>
-            <p class="text-gray-600 mb-6 italic">Abordagem diferenciada. Ele não olhou só meus exames, mas entendeu minha rotina. Me senti acolhida.</p>
-            <div>
-              <p class="font-bold text-gray-900">Fernanda L.</p>
-              <p class="text-xs text-primary uppercase tracking-wide">Check-up Geral</p>
-            </div>
-          </div>
         </div>
+
+        <p class="text-center text-xs text-gray-400 mt-8 max-w-lg mx-auto">
+          O retorno <strong>não é uma nova consulta</strong> — é uma continuação do atendimento já iniciado, focada exclusivamente nos resultados de exames ou pendências levantadas na primeira consulta.
+        </p>
       </div>
     </section>
 
@@ -475,7 +532,7 @@
           <div>
             <h4 class="font-serif text-xl text-white mb-4">Contato</h4>
             <p class="flex items-center gap-2 mb-2"><i data-lucide="mail" class="w-4 h-4"></i> drwictorhugos@gmail.com</p>
-            <p class="flex items-center gap-2"><i data-lucide="instagram" class="w-4 h-4"></i> @dr.wictorhugos</p>
+            <p class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> @dr.wictorhugos</p>
           </div>
           <div>
             <h4 class="font-serif text-xl text-white mb-4">Aviso Legal</h4>
